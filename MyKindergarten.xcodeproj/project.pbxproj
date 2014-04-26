@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BFA9C99190B8B420066A5DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9C98190B8B420066A5DC /* Foundation.framework */; };
+		4BFA9C9B190B8B420066A5DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9C9A190B8B420066A5DC /* CoreGraphics.framework */; };
+		4BFA9C9D190B8B420066A5DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9C9C190B8B420066A5DC /* UIKit.framework */; };
+		4BFA9CA3190B8B420066A5DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BFA9CA1190B8B420066A5DC /* InfoPlist.strings */; };
+		4BFA9CA5190B8B420066A5DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CA4190B8B420066A5DC /* main.m */; };
+		4BFA9CA9190B8B420066A5DC /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CA8190B8B420066A5DC /* MKAppDelegate.m */; };
+		4BFA9CAC190B8B420066A5DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFA9CAA190B8B420066A5DC /* Main.storyboard */; };
+		4BFA9CAF190B8B420066A5DC /* MKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CAE190B8B420066A5DC /* MKViewController.m */; };
+		4BFA9CB1190B8B420066A5DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BFA9CB0190B8B420066A5DC /* Images.xcassets */; };
+		4BFA9CB8190B8B420066A5DC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9CB7190B8B420066A5DC /* XCTest.framework */; };
+		4BFA9CB9190B8B420066A5DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9C98190B8B420066A5DC /* Foundation.framework */; };
+		4BFA9CBA190B8B420066A5DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9C9C190B8B420066A5DC /* UIKit.framework */; };
+		4BFA9CC2190B8B420066A5DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BFA9CC0190B8B420066A5DC /* InfoPlist.strings */; };
+		4BFA9CC4190B8B420066A5DC /* MyKindergartenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CC3190B8B420066A5DC /* MyKindergartenTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BFA9CBB190B8B420066A5DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BFA9C8D190B8B420066A5DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BFA9C94190B8B420066A5DC;
+			remoteInfo = MyKindergarten;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BFA9C95190B8B420066A5DC /* MyKindergarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyKindergarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFA9C98190B8B420066A5DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4BFA9C9A190B8B420066A5DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4BFA9C9C190B8B420066A5DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4BFA9CA0190B8B420066A5DC /* MyKindergarten-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyKindergarten-Info.plist"; sourceTree = "<group>"; };
+		4BFA9CA2190B8B420066A5DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BFA9CA4190B8B420066A5DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BFA9CA6190B8B420066A5DC /* MyKindergarten-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyKindergarten-Prefix.pch"; sourceTree = "<group>"; };
+		4BFA9CA7190B8B420066A5DC /* MKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAppDelegate.h; sourceTree = "<group>"; };
+		4BFA9CA8190B8B420066A5DC /* MKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAppDelegate.m; sourceTree = "<group>"; };
+		4BFA9CAB190B8B420066A5DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BFA9CAD190B8B420066A5DC /* MKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKViewController.h; sourceTree = "<group>"; };
+		4BFA9CAE190B8B420066A5DC /* MKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKViewController.m; sourceTree = "<group>"; };
+		4BFA9CB0190B8B420066A5DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4BFA9CB6190B8B420066A5DC /* MyKindergartenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyKindergartenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFA9CB7190B8B420066A5DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4BFA9CBF190B8B420066A5DC /* MyKindergartenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyKindergartenTests-Info.plist"; sourceTree = "<group>"; };
+		4BFA9CC1190B8B420066A5DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4BFA9CC3190B8B420066A5DC /* MyKindergartenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyKindergartenTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BFA9C92190B8B420066A5DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFA9C9B190B8B420066A5DC /* CoreGraphics.framework in Frameworks */,
+				4BFA9C9D190B8B420066A5DC /* UIKit.framework in Frameworks */,
+				4BFA9C99190B8B420066A5DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BFA9CB3190B8B420066A5DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFA9CB8190B8B420066A5DC /* XCTest.framework in Frameworks */,
+				4BFA9CBA190B8B420066A5DC /* UIKit.framework in Frameworks */,
+				4BFA9CB9190B8B420066A5DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BFA9C8C190B8B420066A5DC = {
+			isa = PBXGroup;
+			children = (
+				4BFA9C9E190B8B420066A5DC /* MyKindergarten */,
+				4BFA9CBD190B8B420066A5DC /* MyKindergartenTests */,
+				4BFA9C97190B8B420066A5DC /* Frameworks */,
+				4BFA9C96190B8B420066A5DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BFA9C96190B8B420066A5DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BFA9C95190B8B420066A5DC /* MyKindergarten.app */,
+				4BFA9CB6190B8B420066A5DC /* MyKindergartenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BFA9C97190B8B420066A5DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BFA9C98190B8B420066A5DC /* Foundation.framework */,
+				4BFA9C9A190B8B420066A5DC /* CoreGraphics.framework */,
+				4BFA9C9C190B8B420066A5DC /* UIKit.framework */,
+				4BFA9CB7190B8B420066A5DC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BFA9C9E190B8B420066A5DC /* MyKindergarten */ = {
+			isa = PBXGroup;
+			children = (
+				4BFA9CA7190B8B420066A5DC /* MKAppDelegate.h */,
+				4BFA9CA8190B8B420066A5DC /* MKAppDelegate.m */,
+				4BFA9CAA190B8B420066A5DC /* Main.storyboard */,
+				4BFA9CAD190B8B420066A5DC /* MKViewController.h */,
+				4BFA9CAE190B8B420066A5DC /* MKViewController.m */,
+				4BFA9CB0190B8B420066A5DC /* Images.xcassets */,
+				4BFA9C9F190B8B420066A5DC /* Supporting Files */,
+			);
+			path = MyKindergarten;
+			sourceTree = "<group>";
+		};
+		4BFA9C9F190B8B420066A5DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BFA9CA0190B8B420066A5DC /* MyKindergarten-Info.plist */,
+				4BFA9CA1190B8B420066A5DC /* InfoPlist.strings */,
+				4BFA9CA4190B8B420066A5DC /* main.m */,
+				4BFA9CA6190B8B420066A5DC /* MyKindergarten-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BFA9CBD190B8B420066A5DC /* MyKindergartenTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BFA9CC3190B8B420066A5DC /* MyKindergartenTests.m */,
+				4BFA9CBE190B8B420066A5DC /* Supporting Files */,
+			);
+			path = MyKindergartenTests;
+			sourceTree = "<group>";
+		};
+		4BFA9CBE190B8B420066A5DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BFA9CBF190B8B420066A5DC /* MyKindergartenTests-Info.plist */,
+				4BFA9CC0190B8B420066A5DC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BFA9C94190B8B420066A5DC /* MyKindergarten */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BFA9CC7190B8B420066A5DC /* Build configuration list for PBXNativeTarget "MyKindergarten" */;
+			buildPhases = (
+				4BFA9C91190B8B420066A5DC /* Sources */,
+				4BFA9C92190B8B420066A5DC /* Frameworks */,
+				4BFA9C93190B8B420066A5DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyKindergarten;
+			productName = MyKindergarten;
+			productReference = 4BFA9C95190B8B420066A5DC /* MyKindergarten.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BFA9CB5190B8B420066A5DC /* MyKindergartenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BFA9CCA190B8B420066A5DC /* Build configuration list for PBXNativeTarget "MyKindergartenTests" */;
+			buildPhases = (
+				4BFA9CB2190B8B420066A5DC /* Sources */,
+				4BFA9CB3190B8B420066A5DC /* Frameworks */,
+				4BFA9CB4190B8B420066A5DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BFA9CBC190B8B420066A5DC /* PBXTargetDependency */,
+			);
+			name = MyKindergartenTests;
+			productName = MyKindergartenTests;
+			productReference = 4BFA9CB6190B8B420066A5DC /* MyKindergartenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BFA9C8D190B8B420066A5DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Li YuFeng";
+				TargetAttributes = {
+					4BFA9CB5190B8B420066A5DC = {
+						TestTargetID = 4BFA9C94190B8B420066A5DC;
+					};
+				};
+			};
+			buildConfigurationList = 4BFA9C90190B8B420066A5DC /* Build configuration list for PBXProject "MyKindergarten" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BFA9C8C190B8B420066A5DC;
+			productRefGroup = 4BFA9C96190B8B420066A5DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BFA9C94190B8B420066A5DC /* MyKindergarten */,
+				4BFA9CB5190B8B420066A5DC /* MyKindergartenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BFA9C93190B8B420066A5DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFA9CB1190B8B420066A5DC /* Images.xcassets in Resources */,
+				4BFA9CA3190B8B420066A5DC /* InfoPlist.strings in Resources */,
+				4BFA9CAC190B8B420066A5DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BFA9CB4190B8B420066A5DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFA9CC2190B8B420066A5DC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BFA9C91190B8B420066A5DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFA9CA9190B8B420066A5DC /* MKAppDelegate.m in Sources */,
+				4BFA9CAF190B8B420066A5DC /* MKViewController.m in Sources */,
+				4BFA9CA5190B8B420066A5DC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BFA9CB2190B8B420066A5DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFA9CC4190B8B420066A5DC /* MyKindergartenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BFA9CBC190B8B420066A5DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BFA9C94190B8B420066A5DC /* MyKindergarten */;
+			targetProxy = 4BFA9CBB190B8B420066A5DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BFA9CA1190B8B420066A5DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BFA9CA2190B8B420066A5DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4BFA9CAA190B8B420066A5DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BFA9CAB190B8B420066A5DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BFA9CC0190B8B420066A5DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BFA9CC1190B8B420066A5DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BFA9CC5190B8B420066A5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4BFA9CC6190B8B420066A5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BFA9CC8190B8B420066A5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyKindergarten/MyKindergarten-Prefix.pch";
+				INFOPLIST_FILE = "MyKindergarten/MyKindergarten-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4BFA9CC9190B8B420066A5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyKindergarten/MyKindergarten-Prefix.pch";
+				INFOPLIST_FILE = "MyKindergarten/MyKindergarten-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4BFA9CCB190B8B420066A5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyKindergarten.app/MyKindergarten";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyKindergarten/MyKindergarten-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyKindergartenTests/MyKindergartenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4BFA9CCC190B8B420066A5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyKindergarten.app/MyKindergarten";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyKindergarten/MyKindergarten-Prefix.pch";
+				INFOPLIST_FILE = "MyKindergartenTests/MyKindergartenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BFA9C90190B8B420066A5DC /* Build configuration list for PBXProject "MyKindergarten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BFA9CC5190B8B420066A5DC /* Debug */,
+				4BFA9CC6190B8B420066A5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BFA9CC7190B8B420066A5DC /* Build configuration list for PBXNativeTarget "MyKindergarten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BFA9CC8190B8B420066A5DC /* Debug */,
+				4BFA9CC9190B8B420066A5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4BFA9CCA190B8B420066A5DC /* Build configuration list for PBXNativeTarget "MyKindergartenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BFA9CCB190B8B420066A5DC /* Debug */,
+				4BFA9CCC190B8B420066A5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BFA9C8D190B8B420066A5DC /* Project object */;
+}
