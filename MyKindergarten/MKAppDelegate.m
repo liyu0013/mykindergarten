@@ -2,8 +2,8 @@
 //  MKAppDelegate.m
 //  MyKindergarten
 //
-//  Created by Li YuFeng on 26/4/14.
-//  Copyright (c) 2014 Li YuFeng. All rights reserved.
+//  Created by XXX on 26/4/14.
+//  Copyright (c) 2014 XXX. All rights reserved.
 //
 
 #import "MKAppDelegate.h"

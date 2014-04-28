@@ -1,5 +1,5 @@
 //
-//  MKAppDelegate.h
+//  MKCodeViewController.h
 //  MyKindergarten
 //
 //  Created by XXX on 26/4/14.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface MKAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface MKCodeViewController : UIViewController <UITextFieldDelegate>
 
 @end

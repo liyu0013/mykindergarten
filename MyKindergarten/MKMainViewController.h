@@ -1,5 +1,5 @@
 //
-//  MKAppDelegate.h
+//  MKViewController.h
 //  MyKindergarten
 //
 //  Created by XXX on 26/4/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MKAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface MKMainViewController : UIViewController
 
 @end

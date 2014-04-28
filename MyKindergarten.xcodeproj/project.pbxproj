@@ -14,13 +14,23 @@
 		4BFA9CA5190B8B420066A5DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CA4190B8B420066A5DC /* main.m */; };
 		4BFA9CA9190B8B420066A5DC /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CA8190B8B420066A5DC /* MKAppDelegate.m */; };
 		4BFA9CAC190B8B420066A5DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFA9CAA190B8B420066A5DC /* Main.storyboard */; };
-		4BFA9CAF190B8B420066A5DC /* MKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CAE190B8B420066A5DC /* MKViewController.m */; };
+		4BFA9CAF190B8B420066A5DC /* MKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CAE190B8B420066A5DC /* MKMainViewController.m */; };
 		4BFA9CB1190B8B420066A5DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BFA9CB0190B8B420066A5DC /* Images.xcassets */; };
 		4BFA9CB8190B8B420066A5DC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9CB7190B8B420066A5DC /* XCTest.framework */; };
 		4BFA9CB9190B8B420066A5DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9C98190B8B420066A5DC /* Foundation.framework */; };
 		4BFA9CBA190B8B420066A5DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9C9C190B8B420066A5DC /* UIKit.framework */; };
 		4BFA9CC2190B8B420066A5DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BFA9CC0190B8B420066A5DC /* InfoPlist.strings */; };
 		4BFA9CC4190B8B420066A5DC /* MyKindergartenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CC3190B8B420066A5DC /* MyKindergartenTests.m */; };
+		4BFA9CCF190B8E350066A5DC /* MKNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CCE190B8E350066A5DC /* MKNameViewController.m */; };
+		4BFA9CD2190B8E400066A5DC /* MKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CD1190B8E400066A5DC /* MKDetailViewController.m */; };
+		4BFA9CD5190B8E4B0066A5DC /* MKCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CD4190B8E4B0066A5DC /* MKCodeViewController.m */; };
+		4BFA9CD8190B8E570066A5DC /* MKFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA9CD7190B8E570066A5DC /* MKFeedbackViewController.m */; };
+		4BFA9CDA190B912B0066A5DC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9CD9190B912B0066A5DC /* CoreLocation.framework */; };
+		4BFA9CDC190B91320066A5DC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFA9CDB190B91320066A5DC /* MapKit.framework */; };
+		616A70B5190E020F009103C8 /* MKURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 616A70B4190E020F009103C8 /* MKURLConnection.m */; };
+		616A70B8190E0258009103C8 /* MKKindergarten.m in Sources */ = {isa = PBXBuildFile; fileRef = 616A70B7190E0258009103C8 /* MKKindergarten.m */; };
+		616A70BE190E05DD009103C8 /* MKFavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616A70BD190E05DD009103C8 /* MKFavouriteViewController.m */; };
+		616A70C1190E084C009103C8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 616A70C0190E084C009103C8 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +55,32 @@
 		4BFA9CA7190B8B420066A5DC /* MKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAppDelegate.h; sourceTree = "<group>"; };
 		4BFA9CA8190B8B420066A5DC /* MKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAppDelegate.m; sourceTree = "<group>"; };
 		4BFA9CAB190B8B420066A5DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4BFA9CAD190B8B420066A5DC /* MKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKViewController.h; sourceTree = "<group>"; };
-		4BFA9CAE190B8B420066A5DC /* MKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKViewController.m; sourceTree = "<group>"; };
+		4BFA9CAD190B8B420066A5DC /* MKMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKMainViewController.h; sourceTree = "<group>"; };
+		4BFA9CAE190B8B420066A5DC /* MKMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKMainViewController.m; sourceTree = "<group>"; };
 		4BFA9CB0190B8B420066A5DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4BFA9CB6190B8B420066A5DC /* MyKindergartenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyKindergartenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFA9CB7190B8B420066A5DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4BFA9CBF190B8B420066A5DC /* MyKindergartenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyKindergartenTests-Info.plist"; sourceTree = "<group>"; };
 		4BFA9CC1190B8B420066A5DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BFA9CC3190B8B420066A5DC /* MyKindergartenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyKindergartenTests.m; sourceTree = "<group>"; };
+		4BFA9CCD190B8E350066A5DC /* MKNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNameViewController.h; sourceTree = "<group>"; };
+		4BFA9CCE190B8E350066A5DC /* MKNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNameViewController.m; sourceTree = "<group>"; };
+		4BFA9CD0190B8E400066A5DC /* MKDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDetailViewController.h; sourceTree = "<group>"; };
+		4BFA9CD1190B8E400066A5DC /* MKDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDetailViewController.m; sourceTree = "<group>"; };
+		4BFA9CD3190B8E4B0066A5DC /* MKCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCodeViewController.h; sourceTree = "<group>"; };
+		4BFA9CD4190B8E4B0066A5DC /* MKCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCodeViewController.m; sourceTree = "<group>"; };
+		4BFA9CD6190B8E570066A5DC /* MKFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFeedbackViewController.h; sourceTree = "<group>"; };
+		4BFA9CD7190B8E570066A5DC /* MKFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKFeedbackViewController.m; sourceTree = "<group>"; };
+		4BFA9CD9190B912B0066A5DC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4BFA9CDB190B91320066A5DC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		616A70B3190E020F009103C8 /* MKURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKURLConnection.h; sourceTree = "<group>"; };
+		616A70B4190E020F009103C8 /* MKURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKURLConnection.m; sourceTree = "<group>"; };
+		616A70B6190E0258009103C8 /* MKKindergarten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKKindergarten.h; sourceTree = "<group>"; };
+		616A70B7190E0258009103C8 /* MKKindergarten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKKindergarten.m; sourceTree = "<group>"; };
+		616A70BC190E05DD009103C8 /* MKFavouriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFavouriteViewController.h; sourceTree = "<group>"; };
+		616A70BD190E05DD009103C8 /* MKFavouriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKFavouriteViewController.m; sourceTree = "<group>"; };
+		616A70BF190E084C009103C8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		616A70C0190E084C009103C8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BFA9CDC190B91320066A5DC /* MapKit.framework in Frameworks */,
+				4BFA9CDA190B912B0066A5DC /* CoreLocation.framework in Frameworks */,
 				4BFA9C9B190B8B420066A5DC /* CoreGraphics.framework in Frameworks */,
 				4BFA9C9D190B8B420066A5DC /* UIKit.framework in Frameworks */,
 				4BFA9C99190B8B420066A5DC /* Foundation.framework in Frameworks */,
@@ -101,6 +131,8 @@
 		4BFA9C97190B8B420066A5DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BFA9CDB190B91320066A5DC /* MapKit.framework */,
+				4BFA9CD9190B912B0066A5DC /* CoreLocation.framework */,
 				4BFA9C98190B8B420066A5DC /* Foundation.framework */,
 				4BFA9C9A190B8B420066A5DC /* CoreGraphics.framework */,
 				4BFA9C9C190B8B420066A5DC /* UIKit.framework */,
@@ -112,12 +144,28 @@
 		4BFA9C9E190B8B420066A5DC /* MyKindergarten */ = {
 			isa = PBXGroup;
 			children = (
+				4BFA9CB0190B8B420066A5DC /* Images.xcassets */,
+				4BFA9CAA190B8B420066A5DC /* Main.storyboard */,
 				4BFA9CA7190B8B420066A5DC /* MKAppDelegate.h */,
 				4BFA9CA8190B8B420066A5DC /* MKAppDelegate.m */,
-				4BFA9CAA190B8B420066A5DC /* Main.storyboard */,
-				4BFA9CAD190B8B420066A5DC /* MKViewController.h */,
-				4BFA9CAE190B8B420066A5DC /* MKViewController.m */,
-				4BFA9CB0190B8B420066A5DC /* Images.xcassets */,
+				4BFA9CAD190B8B420066A5DC /* MKMainViewController.h */,
+				4BFA9CAE190B8B420066A5DC /* MKMainViewController.m */,
+				4BFA9CCD190B8E350066A5DC /* MKNameViewController.h */,
+				4BFA9CCE190B8E350066A5DC /* MKNameViewController.m */,
+				4BFA9CD3190B8E4B0066A5DC /* MKCodeViewController.h */,
+				4BFA9CD4190B8E4B0066A5DC /* MKCodeViewController.m */,
+				4BFA9CD0190B8E400066A5DC /* MKDetailViewController.h */,
+				4BFA9CD1190B8E400066A5DC /* MKDetailViewController.m */,
+				4BFA9CD6190B8E570066A5DC /* MKFeedbackViewController.h */,
+				4BFA9CD7190B8E570066A5DC /* MKFeedbackViewController.m */,
+				616A70BC190E05DD009103C8 /* MKFavouriteViewController.h */,
+				616A70BD190E05DD009103C8 /* MKFavouriteViewController.m */,
+				616A70B6190E0258009103C8 /* MKKindergarten.h */,
+				616A70B7190E0258009103C8 /* MKKindergarten.m */,
+				616A70B3190E020F009103C8 /* MKURLConnection.h */,
+				616A70B4190E020F009103C8 /* MKURLConnection.m */,
+				616A70BF190E084C009103C8 /* Reachability.h */,
+				616A70C0190E084C009103C8 /* Reachability.m */,
 				4BFA9C9F190B8B420066A5DC /* Supporting Files */,
 			);
 			path = MyKindergarten;
@@ -250,9 +298,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BFA9CD2190B8E400066A5DC /* MKDetailViewController.m in Sources */,
 				4BFA9CA9190B8B420066A5DC /* MKAppDelegate.m in Sources */,
-				4BFA9CAF190B8B420066A5DC /* MKViewController.m in Sources */,
+				616A70B5190E020F009103C8 /* MKURLConnection.m in Sources */,
+				616A70C1190E084C009103C8 /* Reachability.m in Sources */,
+				616A70B8190E0258009103C8 /* MKKindergarten.m in Sources */,
+				616A70BE190E05DD009103C8 /* MKFavouriteViewController.m in Sources */,
+				4BFA9CCF190B8E350066A5DC /* MKNameViewController.m in Sources */,
+				4BFA9CAF190B8B420066A5DC /* MKMainViewController.m in Sources */,
 				4BFA9CA5190B8B420066A5DC /* main.m in Sources */,
+				4BFA9CD5190B8E4B0066A5DC /* MKCodeViewController.m in Sources */,
+				4BFA9CD8190B8E570066A5DC /* MKFeedbackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +513,7 @@
 				4BFA9CC9190B8B420066A5DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BFA9CCA190B8B420066A5DC /* Build configuration list for PBXNativeTarget "MyKindergartenTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +522,7 @@
 				4BFA9CCC190B8B420066A5DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
