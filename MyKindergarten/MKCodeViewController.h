@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface MKCodeViewController : UIViewController <UITextFieldDelegate>
+@interface MKCodeViewController : UIViewController <MKMapViewDelegate, UITextFieldDelegate>
 
 @end

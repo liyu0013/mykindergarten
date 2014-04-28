@@ -135,6 +135,7 @@
 }
 
 #pragma mark - Custom Methods
+
 - (void)getSuggestions {
     NSString *keyword = textName.text;
     //TODO API call to get suggestions
