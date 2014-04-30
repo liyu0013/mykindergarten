@@ -115,28 +115,33 @@
 
 - (void)searchCode {
     //TODO API call here; mockup data here
-    CLLocationCoordinate2D coordinate;
-    coordinate.latitude = 1.317682;
-    coordinate.longitude = 103.80584;
-    selectedKindergarten = [[MKKindergarten alloc] initWithCoordiniate:coordinate name:@"Nanyang Kindergarten" address:@"118 King's Road Singapore" postalCode:@"268155" website:@"http://www.nanyangkindergarten.com" phoneNum:@"64663375" email:@"nykadmin@nanyangkindergarten.com"];
-    [kindergartens addObject:selectedKindergarten];
-    
-    [mapView removeAnnotations:mapView.annotations];
-    [mapView addAnnotations:kindergartens];
-    
     
     [indicator startAnimating];
     CLGeocoder *geoCoder = [[CLGeocoder alloc] init];
     [geoCoder geocodeAddressString:textCode.text completionHandler:^(NSArray *placemarks, NSError *error) {
         [indicator stopAnimating];
-        CLPlacemark *firstPlacemark = [placemarks objectAtIndex:0];
-        [self relocate:firstPlacemark.location.coordinate];
-        
         if (error) {
             NSLog(@"Error: %@", [error description]);
+        }else{
+            CLPlacemark *firstPlacemark = [placemarks objectAtIndex:0];
+            [self relocate:firstPlacemark.location.coordinate];
+            MKURLConnection *connection = [[MKURLConnection alloc]init];
+            connection.delegate = self;
+            NSString *searchURL = [NSString stringWithFormat:@"http://203.211.60.165/mtec-wlad/kindergarten/search/%f/%f/1.json",firstPlacemark.location.coordinate.latitude, firstPlacemark.location.coordinate.longitude];
+            NSURL *url = [NSURL URLWithString:searchURL];
+            [connection searchWithURL:url];
         }
     }];
     [indicator stopAnimating];
+}
+
+-(void)detailsReturned:(NSMutableData *)data{
+    
+}
+-(void)suggestionsReturned:(NSMutableArray *)data{
+    kindergartens = data;
+    [mapView removeAnnotations:mapView.annotations];
+    [mapView addAnnotations:kindergartens];
 }
 
 - (void)relocate: (CLLocationCoordinate2D) newCoordinate
@@ -158,5 +163,9 @@
 - (IBAction)search:(id)sender {
     [self.textCode resignFirstResponder];
     [self searchCode];
+}
+
+- (void)noConnection{
+    NSLog(@"No WiFi connection") ;
 }
 @end

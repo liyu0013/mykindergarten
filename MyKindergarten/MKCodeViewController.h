@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "MKURLConnection.h"
 
-@interface MKCodeViewController : UIViewController <MKMapViewDelegate, UITextFieldDelegate>
+@interface MKCodeViewController : UIViewController <MKMapViewDelegate, UITextFieldDelegate, MKURLConnectionDelegate>
 
 @end

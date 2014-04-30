@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MKKindergarten.h"
+#import "ToastView.h"
 
 @interface MKDetailViewController : UIViewController
 @property (nonatomic, retain) MKKindergarten *kindergarten;

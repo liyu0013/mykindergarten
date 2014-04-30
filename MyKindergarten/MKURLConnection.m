@@ -26,6 +26,22 @@
     return self;
 }
 
+-(void)searchWithURL :(NSURL *)url{
+    if ([self.internetReachability currentReachabilityStatus] == NotReachable) {
+        NSLog(@"Network not available!");
+        [self printMessage:@"Network not available!"];
+        if ([delegate respondsToSelector:@selector(noConnection)]) {
+            [delegate noConnection];
+        }
+    } else {
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+        NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        if (conn) {
+            self.buffer = [NSMutableData data];
+        }
+    }
+}
+
 - (void)search:(NSString *)keyword {
     NSString *remoteHostName =
     //    [NSString stringWithFormat:@"http://dict-co.iciba.com/api/dictionary.php?key=583E68BDE90D1A1A0D393078483CA251&w=%@", keyword];
@@ -62,7 +78,7 @@
 - (void)reachabilityChanged:(NSNotification *)note{
 	Reachability* reachability = [note object];
 	NSParameterAssert([reachability isKindOfClass:[Reachability class]]);
-    NSLog(@"reachabilityChanged - %d", [reachability currentReachabilityStatus]);
+//    NSLog(@"reachabilityChanged - %d", [reachability currentReachabilityStatus]);
 }
 
 - (void) connection:(NSURLConnection *) connection didReceiveResponse:(NSURLResponse *) response {
@@ -80,16 +96,44 @@
 }
 
 - (void) connectionDidFinishLoading:(NSURLConnection *) connection {
-	NSLog(@"Done with bytes %d", [buffer length]);
     
-    NSMutableString *theXML = [[NSMutableString alloc] initWithBytes:[buffer mutableBytes] length:[buffer length] encoding:NSUTF8StringEncoding];
-    [theXML replaceOccurrencesOfString:@"&lt;" withString:@"<" options:0 range:NSMakeRange(0, [theXML length])];
-    [theXML replaceOccurrencesOfString:@"&gt;" withString:@">" options:0 range:NSMakeRange(0, [theXML length])];
-    NSLog(@"Response is %@", theXML);
-    [buffer setData:[theXML dataUsingEncoding:NSUTF8StringEncoding]];
-    [self parseData];
+//    NSMutableString *theXML = [[NSMutableString alloc] initWithBytes:[buffer mutableBytes] length:[buffer length] encoding:NSUTF8StringEncoding];
+//    [theXML replaceOccurrencesOfString:@"&lt;" withString:@"<" options:0 range:NSMakeRange(0, [theXML length])];
+//    [theXML replaceOccurrencesOfString:@"&gt;" withString:@">" options:0 range:NSMakeRange(0, [theXML length])];
+    
+    NSError *e = nil;
+    NSDictionary *results = [NSJSONSerialization JSONObjectWithData:buffer options:NSJSONReadingMutableContainers error:&e];
+
+
+    [self parseJSON:results];
 }
 
+-(void)parseJSON:(NSDictionary *)results{
+
+    NSDictionary *lev1 = [results objectForKey:@"response"];
+        NSArray *items = [lev1 objectForKey:@"kindergartenList"];
+    NSMutableArray * dataArray = [[NSMutableArray alloc]init];
+    for (NSDictionary *item in items) {
+        NSString *latitude = [item objectForKey:@"latitude"];
+        NSString *longitude = [item objectForKey:@"longitude"];
+        NSString *kindergartenID = [item objectForKey:@"id"];
+        NSString *name = [item objectForKey:@"name"];
+        NSString *street = [item objectForKey:@"street"];
+        NSString *block = [item objectForKey:@"block"];
+        NSString *building = [item objectForKey:@"building"];
+        NSString *floor = [item objectForKey:@"floor"];
+        NSString *postalCode = [item objectForKey:@"postalCode"];
+        NSString *x_addr = [item objectForKey:@"x_addr"];
+        NSString *y_addr = [item objectForKey:@"y_addr"];
+        
+        
+        MKKindergarten *garten = [[MKKindergarten alloc]initWithCoordiniate:(CLLocationCoordinate2D){.latitude =[latitude doubleValue], .longitude = [longitude doubleValue]} name:name street:street postalCode:postalCode block:block building:building floor:floor x_addr:x_addr y_addr:y_addr longitude:longitude latitude:latitude kindergartenID:kindergartenID];
+        [dataArray addObject:garten];
+    }
+    if ([self.delegate respondsToSelector:@selector(suggestionsReturned:)]) {
+        [delegate suggestionsReturned:dataArray];
+    }
+}
 - (void) parseData{
     isSuggestionsReturned = NO;
     isDetailsReturned = NO;

@@ -150,8 +150,8 @@
     CLLocationCoordinate2D coordinate;
     coordinate.latitude = 1.317682;
     coordinate.longitude = 103.80584;
-    kindergarten = [[MKKindergarten alloc] initWithCoordiniate:coordinate name:@"Nanyang Kindergarten" address:@"118 King's Road Singapore" postalCode:@"268155" website:@"http://www.nanyangkindergarten.com" phoneNum:@"64663375" email:@"nykadmin@nanyangkindergarten.com"];
-    
+//    kindergarten = [[MKKindergarten alloc] initWithCoordiniate:coordinate name:@"Nanyang Kindergarten" address:@"118 King's Road Singapore" postalCode:@"268155" website:@"http://www.nanyangkindergarten.com" phoneNum:@"64663375" email:@"nykadmin@nanyangkindergarten.com"];
+        kindergarten = [[MKKindergarten alloc]initWithCoordiniate:coordinate name:@"Nanyang Kindergarten" street:@"AMK Street 62" postalCode:@"90932" block:@"2" building:@"NCS Hub" floor:@"" x_addr:@"" y_addr:@"" longitude:@"" latitude:@"" kindergartenID:@"22"];
     [mapView removeAnnotations:mapView.annotations];
     [mapView addAnnotation:kindergarten];
     

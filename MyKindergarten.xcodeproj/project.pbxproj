@@ -31,6 +31,8 @@
 		616A70B8190E0258009103C8 /* MKKindergarten.m in Sources */ = {isa = PBXBuildFile; fileRef = 616A70B7190E0258009103C8 /* MKKindergarten.m */; };
 		616A70BE190E05DD009103C8 /* MKFavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616A70BD190E05DD009103C8 /* MKFavouriteViewController.m */; };
 		616A70C1190E084C009103C8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 616A70C0190E084C009103C8 /* Reachability.m */; };
+		849135A2190F78D1008E194E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 849135A1190F78D1008E194E /* libsqlite3.dylib */; };
+		849135A5190F85B9008E194E /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849135A4190F85B9008E194E /* ToastView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,9 @@
 		616A70BD190E05DD009103C8 /* MKFavouriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKFavouriteViewController.m; sourceTree = "<group>"; };
 		616A70BF190E084C009103C8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		616A70C0190E084C009103C8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		849135A1190F78D1008E194E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		849135A3190F85B9008E194E /* ToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastView.h; sourceTree = "<group>"; };
+		849135A4190F85B9008E194E /* ToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849135A2190F78D1008E194E /* libsqlite3.dylib in Frameworks */,
 				4BFA9CDC190B91320066A5DC /* MapKit.framework in Frameworks */,
 				4BFA9CDA190B912B0066A5DC /* CoreLocation.framework in Frameworks */,
 				4BFA9C9B190B8B420066A5DC /* CoreGraphics.framework in Frameworks */,
@@ -131,6 +137,7 @@
 		4BFA9C97190B8B420066A5DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				849135A1190F78D1008E194E /* libsqlite3.dylib */,
 				4BFA9CDB190B91320066A5DC /* MapKit.framework */,
 				4BFA9CD9190B912B0066A5DC /* CoreLocation.framework */,
 				4BFA9C98190B8B420066A5DC /* Foundation.framework */,
@@ -166,6 +173,8 @@
 				616A70B4190E020F009103C8 /* MKURLConnection.m */,
 				616A70BF190E084C009103C8 /* Reachability.h */,
 				616A70C0190E084C009103C8 /* Reachability.m */,
+				849135A3190F85B9008E194E /* ToastView.h */,
+				849135A4190F85B9008E194E /* ToastView.m */,
 				4BFA9C9F190B8B420066A5DC /* Supporting Files */,
 			);
 			path = MyKindergarten;
@@ -302,6 +311,7 @@
 				4BFA9CA9190B8B420066A5DC /* MKAppDelegate.m in Sources */,
 				616A70B5190E020F009103C8 /* MKURLConnection.m in Sources */,
 				616A70C1190E084C009103C8 /* Reachability.m in Sources */,
+				849135A5190F85B9008E194E /* ToastView.m in Sources */,
 				616A70B8190E0258009103C8 /* MKKindergarten.m in Sources */,
 				616A70BE190E05DD009103C8 /* MKFavouriteViewController.m in Sources */,
 				4BFA9CCF190B8E350066A5DC /* MKNameViewController.m in Sources */,

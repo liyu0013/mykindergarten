@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MKKindergarten.h"
 @class Reachability;
 
 @protocol MKURLConnectionDelegate<NSObject>
@@ -32,5 +33,8 @@
 - (void)printMessage:(NSString *) message;
 - (void)initReachability;
 - (void)reachabilityChanged:(NSNotification *) note;
+
+- (void)searchWithURL:(NSURL *)url;
+-(void)parseJSON:(NSDictionary *)results;
 
 @end
